@@ -1,0 +1,23 @@
+{
+    "_readme": "Fill in the values below. Every place in the codebase that shows copyright, brand name, or contact info reads from this file. DO NOT change the keys — only update the values.",
+    "copyright": {
+        "appName": "DevTools",
+        "owner": "AK",
+        "year": "2026",
+        "tagline": "Devs need ease too",
+        "website": "https://aniket-patel.netlify.app",
+        "email": "aniketpatel.0303@gmail.com",
+        "version": "1.0.0",
+        "license": ""
+    },
+    "social": {
+        "github": "https://github.com/AniketPatel369",
+        "twitter": "https://twitter.com/aniket3690",
+        "linkedin": ""
+    },
+    "legal": {
+        "footerText": "© {year} {owner}. All rights reserved.",
+        "aboutText": "{appName} v{version} — {tagline}",
+        "builtWithText": "Built with ❤️ by {owner}"
+    }
+}

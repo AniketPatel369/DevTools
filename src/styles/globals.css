@@ -1,0 +1,109 @@
+/* ============================================================
+   DEVTOOLS — GLOBAL STYLES
+   ============================================================ */
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--font-ui);
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+    background: var(--color-bg-app);
+    line-height: var(--leading-normal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Scrollbar ---- */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-thumb);
+    border-radius: var(--radius-full);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--color-scrollbar-thumb-hover);
+}
+
+/* ---- Selection ---- */
+::selection {
+    background: rgba(59, 130, 246, 0.3);
+    color: var(--color-text-primary);
+}
+
+/* ---- Focus ---- */
+:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+}
+
+/* ---- Links ---- */
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---- Code ---- */
+code,
+pre,
+kbd {
+    font-family: var(--font-mono);
+}
+
+/* ---- Button reset ---- */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* ---- Input reset ---- */
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* ---- Divider ---- */
+hr {
+    border: none;
+    border-top: 1px solid var(--color-border-subtle);
+}

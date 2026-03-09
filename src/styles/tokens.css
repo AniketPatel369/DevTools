@@ -1,0 +1,120 @@
+/* ============================================================
+   DEVTOOLS — DESIGN TOKENS
+   Generated from brand.json. DO NOT hardcode values elsewhere.
+   ============================================================ */
+
+:root {
+  /* ---------- Backgrounds ---------- */
+  --color-bg-app:         #0f0f13;
+  --color-bg-sidebar:     #111117;
+  --color-bg-panel:       #16161d;
+  --color-bg-card:        #1c1c25;
+  --color-bg-input:       #12121a;
+  --color-bg-hover:       #1e1e2a;
+  --color-bg-active-row:  #1a2340;
+
+  /* ---------- Borders ---------- */
+  --color-border:         #2a2a38;
+  --color-border-focus:   #3b82f6;
+  --color-border-subtle:  #1e1e2a;
+
+  /* ---------- Text ---------- */
+  --color-text-primary:   #e8e8f0;
+  --color-text-secondary: #8888a8;
+  --color-text-muted:     #55556a;
+  --color-text-faint:     #44445a;
+  --color-text-code:      #c9d1d9;
+  --color-text-placeholder: #44445a;
+
+  /* ---------- Accent ---------- */
+  --color-accent:         #3b82f6;
+  --color-accent-hover:   #2563eb;
+  --color-accent-active:  #1d4ed8;
+
+  /* ---------- Category Accents ---------- */
+  --color-encoding:       #4ade80;
+  --color-encoding-bg:    #1a3a2a;
+  --color-encoding-border:#2d6b3f;
+
+  --color-hashing:        #c084fc;
+  --color-hashing-bg:     #2a1a3a;
+  --color-hashing-border: #5b3d7a;
+
+  --color-formats:        #60a5fa;
+  --color-formats-bg:     #1a2a3a;
+  --color-formats-border: #2d4f7a;
+
+  --color-webdev:         #fb923c;
+  --color-webdev-bg:      #3a2a1a;
+  --color-webdev-border:  #7a4f2d;
+
+  /* ---------- Semantic ---------- */
+  --color-success:        #4ade80;
+  --color-danger:         #f87171;
+  --color-warning:        #fbbf24;
+  --color-star:           #f59e0b;
+
+  /* ---------- Scrollbar ---------- */
+  --color-scrollbar-track: #111117;
+  --color-scrollbar-thumb: #2a2a38;
+  --color-scrollbar-thumb-hover: #3a3a50;
+
+  /* ---------- Typography ---------- */
+  --font-ui:   'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 13px;
+  --text-md:   14px;
+  --text-lg:   16px;
+  --text-xl:   18px;
+  --text-xxl:  20px;
+
+  --font-normal:   400;
+  --font-medium:   500;
+  --font-semibold: 600;
+  --font-bold:     700;
+
+  --leading-tight:   1.2;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+
+  /* ---------- Spacing ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ---------- Layout ---------- */
+  --sidebar-width: 200px;
+
+  /* ---------- Radius ---------- */
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   10px;
+  --radius-full: 9999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.5);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.6);
+  --shadow-focus: 0 0 0 2px rgba(59,130,246,0.35);
+
+  /* ---------- Transitions ---------- */
+  --transition-fast:   100ms ease;
+  --transition-normal: 150ms ease;
+  --transition-slow:   250ms ease;
+
+  /* ---------- Icon Sizes ---------- */
+  --icon-sm: 14px;
+  --icon-md: 16px;
+  --icon-lg: 20px;
+  --icon-xl: 28px;
+}

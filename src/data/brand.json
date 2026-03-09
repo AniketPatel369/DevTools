@@ -1,0 +1,355 @@
+{
+    "brand": {
+        "name": "DevTools",
+        "tagline": "Your all-in-one developer utility toolbox"
+    },
+    "colors": {
+        "background": {
+            "app": "#0f0f13",
+            "sidebar": "#111117",
+            "panel": "#16161d",
+            "card": "#1c1c25",
+            "input": "#12121a",
+            "inputBorder": "#2a2a38",
+            "inputFocusBorder": "#3b82f6",
+            "hover": "#1e1e2a",
+            "activeRow": "#1a2340"
+        },
+        "text": {
+            "primary": "#e8e8f0",
+            "secondary": "#8888a8",
+            "muted": "#55556a",
+            "code": "#c9d1d9",
+            "placeholder": "#44445a"
+        },
+        "accent": {
+            "primary": "#3b82f6",
+            "primaryHover": "#2563eb",
+            "primaryActive": "#1d4ed8"
+        },
+        "categoryBadge": {
+            "Encoding": {
+                "background": "#1a3a2a",
+                "text": "#4ade80",
+                "border": "#2d6b3f"
+            },
+            "Hashing": {
+                "background": "#2a1a3a",
+                "text": "#c084fc",
+                "border": "#5b3d7a"
+            },
+            "Formats": {
+                "background": "#1a2a3a",
+                "text": "#60a5fa",
+                "border": "#2d4f7a"
+            },
+            "WebDev": {
+                "background": "#3a2a1a",
+                "text": "#fb923c",
+                "border": "#7a4f2d"
+            }
+        },
+        "categoryIcon": {
+            "Encoding": "#4ade80",
+            "Hashing": "#c084fc",
+            "Formats": "#60a5fa",
+            "WebDev": "#fb923c"
+        },
+        "button": {
+            "primary": {
+                "background": "#3b82f6",
+                "text": "#ffffff",
+                "hover": "#2563eb",
+                "active": "#1d4ed8"
+            },
+            "secondary": {
+                "background": "transparent",
+                "text": "#8888a8",
+                "border": "#2a2a38",
+                "hover": "#1e1e2a"
+            },
+            "danger": {
+                "background": "transparent",
+                "text": "#f87171",
+                "border": "#3d2020",
+                "hover": "#2a1515"
+            }
+        },
+        "toggle": {
+            "activeBackground": "#3b82f6",
+            "activeText": "#ffffff",
+            "inactiveBackground": "transparent",
+            "inactiveText": "#8888a8",
+            "border": "#2a2a38",
+            "containerBackground": "#1c1c25"
+        },
+        "checkbox": {
+            "checked": "#3b82f6",
+            "unchecked": "#2a2a38",
+            "checkmark": "#ffffff"
+        },
+        "scrollbar": {
+            "track": "#111117",
+            "thumb": "#2a2a38",
+            "thumbHover": "#3a3a50"
+        },
+        "divider": "#1e1e2a",
+        "sectionHeader": {
+            "text": "#44445a",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.08em"
+        },
+        "output": {
+            "background": "#12121a",
+            "border": "#1e1e2a",
+            "label": "#55556a",
+            "value": "#c9d1d9"
+        },
+        "copyIcon": "#55556a",
+        "copyIconHover": "#3b82f6",
+        "charCount": "#44445a"
+    },
+    "typography": {
+        "fontFamily": {
+            "ui": "'Inter', 'Segoe UI', system-ui, sans-serif",
+            "mono": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace"
+        },
+        "fontSize": {
+            "xs": "11px",
+            "sm": "12px",
+            "base": "13px",
+            "md": "14px",
+            "lg": "16px",
+            "xl": "18px",
+            "xxl": "20px",
+            "toolTitle": "17px",
+            "sectionLabel": "10px"
+        },
+        "fontWeight": {
+            "normal": 400,
+            "medium": 500,
+            "semibold": 600,
+            "bold": 700
+        },
+        "lineHeight": {
+            "tight": 1.2,
+            "normal": 1.5,
+            "relaxed": 1.7
+        },
+        "usage": {
+            "toolName": {
+                "size": "17px",
+                "weight": 600,
+                "color": "text.primary"
+            },
+            "toolSubtitle": {
+                "size": "12px",
+                "weight": 400,
+                "color": "text.secondary"
+            },
+            "sidebarItem": {
+                "size": "13px",
+                "weight": 400,
+                "color": "text.primary"
+            },
+            "sidebarSection": {
+                "size": "10px",
+                "weight": 600,
+                "color": "sectionHeader.text",
+                "transform": "uppercase",
+                "letterSpacing": "0.08em"
+            },
+            "label": {
+                "size": "12px",
+                "weight": 500,
+                "color": "text.secondary"
+            },
+            "inputText": {
+                "size": "13px",
+                "weight": 400,
+                "font": "mono",
+                "color": "text.code"
+            },
+            "outputText": {
+                "size": "13px",
+                "weight": 400,
+                "font": "mono",
+                "color": "text.code"
+            },
+            "outputLabel": {
+                "size": "11px",
+                "weight": 500,
+                "color": "output.label"
+            },
+            "charCount": {
+                "size": "11px",
+                "weight": 400,
+                "color": "charCount"
+            },
+            "button": {
+                "size": "13px",
+                "weight": 500
+            },
+            "badge": {
+                "size": "11px",
+                "weight": 600
+            }
+        }
+    },
+    "spacing": {
+        "unit": 4,
+        "scale": {
+            "0": "0px",
+            "1": "4px",
+            "2": "8px",
+            "3": "12px",
+            "4": "16px",
+            "5": "20px",
+            "6": "24px",
+            "8": "32px",
+            "10": "40px",
+            "12": "48px"
+        },
+        "layout": {
+            "sidebarWidth": "192px",
+            "mainPanelPadding": "24px",
+            "sidebarPadding": "8px",
+            "sectionGap": "24px",
+            "itemGap": "2px",
+            "cardPadding": "16px",
+            "inputPadding": "12px 14px",
+            "buttonPaddingX": "16px",
+            "buttonPaddingY": "8px",
+            "optionsGap": "16px",
+            "outputFieldGap": "12px"
+        }
+    },
+    "borderRadius": {
+        "sm": "4px",
+        "md": "6px",
+        "lg": "8px",
+        "xl": "10px",
+        "full": "9999px",
+        "input": "6px",
+        "button": "6px",
+        "badge": "4px",
+        "card": "8px",
+        "toggle": "6px"
+    },
+    "shadows": {
+        "sm": "0 1px 2px rgba(0,0,0,0.4)",
+        "md": "0 2px 8px rgba(0,0,0,0.5)",
+        "lg": "0 4px 16px rgba(0,0,0,0.6)",
+        "focusRing": "0 0 0 2px #3b82f655"
+    },
+    "transitions": {
+        "fast": "100ms ease",
+        "normal": "150ms ease",
+        "slow": "250ms ease"
+    },
+    "iconSizes": {
+        "sidebar": "15px",
+        "action": "14px",
+        "toolHeader": "28px",
+        "badge": "12px"
+    },
+    "components": {
+        "sidebar": {
+            "width": "192px",
+            "background": "#111117",
+            "borderRight": "1px solid #1e1e2a",
+            "searchBar": {
+                "background": "#1c1c25",
+                "border": "1px solid #2a2a38",
+                "borderRadius": "6px",
+                "padding": "7px 12px",
+                "fontSize": "13px",
+                "placeholderColor": "#44445a",
+                "kbdBadge": {
+                    "background": "#1e1e2a",
+                    "text": "#44445a",
+                    "borderRadius": "4px",
+                    "padding": "2px 5px",
+                    "fontSize": "10px"
+                }
+            },
+            "toolItem": {
+                "padding": "6px 10px",
+                "borderRadius": "6px",
+                "gap": "8px",
+                "activeBackground": "#1a2340",
+                "activeBorderLeft": "2px solid #3b82f6",
+                "hoverBackground": "#1e1e2a"
+            }
+        },
+        "mainPanel": {
+            "background": "#0f0f13",
+            "padding": "24px"
+        },
+        "toolHeader": {
+            "iconSize": "40px",
+            "iconBorderRadius": "10px",
+            "gap": "14px",
+            "padding": "0 0 20px 0",
+            "borderBottom": "1px solid #1e1e2a"
+        },
+        "textarea": {
+            "background": "#12121a",
+            "border": "1px solid #2a2a38",
+            "focusBorder": "1px solid #3b82f6",
+            "borderRadius": "8px",
+            "padding": "12px 14px",
+            "minHeight": "120px",
+            "font": "mono",
+            "fontSize": "13px",
+            "resize": "vertical"
+        },
+        "optionsPanel": {
+            "background": "#1c1c25",
+            "borderRadius": "8px",
+            "padding": "14px 16px",
+            "gap": "14px",
+            "headerColor": "#8888a8",
+            "headerFontSize": "12px",
+            "headerFontWeight": 500
+        },
+        "outputPanel": {
+            "background": "#12121a",
+            "border": "1px solid #1e1e2a",
+            "borderRadius": "8px",
+            "padding": "14px 16px",
+            "fieldLabelFontSize": "11px",
+            "fieldLabelColor": "#55556a",
+            "fieldValueFontSize": "13px",
+            "fieldValueColor": "#c9d1d9",
+            "fieldDivider": "1px solid #1e1e2a"
+        },
+        "toggle3way": {
+            "background": "#1c1c25",
+            "border": "1px solid #2a2a38",
+            "borderRadius": "6px",
+            "padding": "2px",
+            "buttonPadding": "4px 14px",
+            "activeBg": "#3b82f6",
+            "activeText": "#ffffff",
+            "inactiveText": "#8888a8",
+            "fontSize": "12px",
+            "fontWeight": 500
+        },
+        "spinner": {
+            "background": "#1c1c25",
+            "border": "1px solid #2a2a38",
+            "borderRadius": "6px",
+            "arrowColor": "#8888a8",
+            "width": "64px"
+        },
+        "dropdown": {
+            "background": "#1c1c25",
+            "border": "1px solid #2a2a38",
+            "borderRadius": "6px",
+            "padding": "5px 10px",
+            "arrowColor": "#8888a8",
+            "fontSize": "13px"
+        }
+    }
+}

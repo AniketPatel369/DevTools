@@ -1,0 +1,830 @@
+{
+    "Encoding": [
+        {
+            "id": "base64",
+            "name": "Base64",
+            "icon": "ALargeSmall",
+            "description": "Encode and decode Base64 strings",
+            "options": {
+                "variant": [
+                    "Standard",
+                    "URL-Safe"
+                ],
+                "lineWrap": [
+                    "None",
+                    "76",
+                    "64"
+                ],
+                "addPadding": true
+            },
+            "actions": [
+                "Encode",
+                "Decode",
+                "Swap",
+                "Clear"
+            ]
+        },
+        {
+            "id": "url-encode",
+            "name": "URL Encode",
+            "icon": "Link",
+            "description": "Encode and decode URL / URI strings",
+            "actions": [
+                "Encode",
+                "Decode",
+                "Clear"
+            ]
+        },
+        {
+            "id": "html-entity",
+            "name": "HTML Entity",
+            "icon": "Code",
+            "description": "Encode and decode HTML entities",
+            "actions": [
+                "Encode",
+                "Decode",
+                "Clear"
+            ]
+        },
+        {
+            "id": "jwt-decoder",
+            "name": "JWT Decoder",
+            "icon": "KeyRound",
+            "description": "Decode and inspect JSON Web Tokens",
+            "actions": [
+                "Decode",
+                "Clear"
+            ]
+        },
+        {
+            "id": "unicode-escape",
+            "name": "Unicode Escape",
+            "icon": "Globe",
+            "description": "Escape and unescape Unicode characters",
+            "actions": [
+                "Escape",
+                "Unescape",
+                "Clear"
+            ]
+        },
+        {
+            "id": "binary-hex-octal",
+            "name": "Binary / Hex / Octal",
+            "icon": "Binary",
+            "description": "Convert numbers between binary, hex, octal and decimal in real time"
+        },
+        {
+            "id": "morse-code",
+            "name": "Morse Code",
+            "icon": "Radio",
+            "description": "Encode and decode Morse code",
+            "actions": [
+                "Encode",
+                "Decode",
+                "Clear"
+            ]
+        },
+        {
+            "id": "rot13-cipher",
+            "name": "ROT13 Cipher",
+            "icon": "RotateCcw",
+            "description": "Apply ROT13 substitution cipher",
+            "actions": [
+                "Apply ROT13",
+                "Clear"
+            ]
+        },
+        {
+            "id": "text-case-converter",
+            "name": "Text Case Converter",
+            "icon": "CaseSensitive",
+            "description": "Convert text between camelCase, snake_case, UPPER_CASE, kebab-case, PascalCase, Title Case and more",
+            "options": {
+                "targetCase": [
+                    "camelCase",
+                    "snake_case",
+                    "UPPER_SNAKE",
+                    "kebab-case",
+                    "PascalCase",
+                    "Title Case",
+                    "UPPERCASE",
+                    "lowercase",
+                    "dot.case"
+                ]
+            },
+            "actions": [
+                "Convert",
+                "Clear"
+            ]
+        },
+        {
+            "id": "slugify",
+            "name": "Slugify",
+            "icon": "Minus",
+            "description": "Convert any text to a clean, URL-friendly slug",
+            "options": {
+                "separator": [
+                    "-",
+                    "_"
+                ],
+                "lowercase": true
+            },
+            "actions": [
+                "Slugify",
+                "Clear"
+            ]
+        },
+        {
+            "id": "text-escape",
+            "name": "Text Escape / Unescape",
+            "icon": "Replace",
+            "description": "Escape or unescape special characters for JSON, SQL, Regex, Shell, and CSV contexts",
+            "options": {
+                "target": [
+                    "JSON",
+                    "SQL",
+                    "Regex",
+                    "Shell",
+                    "CSV"
+                ]
+            },
+            "actions": [
+                "Escape",
+                "Unescape",
+                "Clear"
+            ]
+        },
+        {
+            "id": "line-sorter",
+            "name": "Line Sorter",
+            "icon": "ArrowUpDown",
+            "description": "Sort lines alphabetically, numerically, or reverse; optionally remove duplicates",
+            "options": {
+                "order": [
+                    "A → Z",
+                    "Z → A",
+                    "Numeric Asc",
+                    "Numeric Desc"
+                ],
+                "removeDuplicates": false,
+                "trimLines": true
+            },
+            "actions": [
+                "Sort",
+                "Clear"
+            ]
+        },
+        {
+            "id": "duplicate-remover",
+            "name": "Duplicate Line Remover",
+            "icon": "Layers",
+            "description": "Remove duplicate lines from text, case-sensitive or insensitive",
+            "options": {
+                "caseSensitive": true,
+                "trimLines": true
+            },
+            "actions": [
+                "Remove Duplicates",
+                "Clear"
+            ]
+        }
+    ],
+    "Hashing": [
+        {
+            "id": "hash-generator",
+            "name": "Hash Generator",
+            "icon": "Hash",
+            "description": "Generate MD5, SHA-1, SHA-256, SHA-512 hashes",
+            "options": {
+                "algorithm": [
+                    "MD5",
+                    "SHA-1",
+                    "SHA-256",
+                    "SHA-384",
+                    "SHA-512"
+                ],
+                "outputFormat": [
+                    "Hex",
+                    "Base64"
+                ]
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "hmac-generator",
+            "name": "HMAC Generator",
+            "icon": "ShieldCheck",
+            "description": "Generate HMAC signatures with a secret key",
+            "options": {
+                "algorithm": [
+                    "SHA-256",
+                    "SHA-512",
+                    "SHA-1"
+                ]
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "password-hash",
+            "name": "Password Hash",
+            "icon": "Lock",
+            "description": "Generate secure password hashes with PBKDF2",
+            "options": {
+                "customSalt": "",
+                "iterations": 100,
+                "keyLength": 32,
+                "hashFunction": [
+                    "SHA-256",
+                    "SHA-512",
+                    "SHA-1"
+                ],
+                "generateRandomSalt": true
+            },
+            "actions": [
+                "Generate Hash",
+                "Clear"
+            ],
+            "output": [
+                "Derived Key",
+                "Salt",
+                "Algorithm",
+                "Iterations",
+                "Full Hash String"
+            ]
+        },
+        {
+            "id": "checksum",
+            "name": "Checksum",
+            "icon": "CircleCheckBig",
+            "description": "Compute and compare file or text checksums",
+            "actions": [
+                "Compute",
+                "Clear"
+            ]
+        },
+        {
+            "id": "uuid-generator",
+            "name": "UUID Generator",
+            "icon": "Fingerprint",
+            "description": "Generate UUIDs — v1, v4, v5 and ULID",
+            "options": {
+                "version": [
+                    "v1",
+                    "v4",
+                    "v5",
+                    "ULID"
+                ],
+                "count": 1,
+                "uppercase": false
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "random-string",
+            "name": "Random String",
+            "icon": "Shuffle",
+            "description": "Generate random strings with a custom charset and length",
+            "options": {
+                "length": 32,
+                "uppercase": true,
+                "lowercase": true,
+                "numbers": true,
+                "symbols": false
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "nanoid",
+            "name": "Nanoid",
+            "icon": "Zap",
+            "description": "Generate compact, URL-safe unique string IDs",
+            "options": {
+                "size": 21
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "jwt-debugger",
+            "name": "JWT Debugger",
+            "icon": "KeySquare",
+            "description": "Decode, inspect, and verify JWT header, payload, and signature",
+            "options": {
+                "algorithm": [
+                    "HS256",
+                    "HS384",
+                    "HS512",
+                    "RS256"
+                ]
+            },
+            "actions": [
+                "Decode",
+                "Verify",
+                "Clear"
+            ],
+            "output": [
+                "Header",
+                "Payload",
+                "Signature Valid"
+            ]
+        },
+        {
+            "id": "unix-permissions",
+            "name": "Unix Permissions",
+            "icon": "ShieldAlert",
+            "description": "Calculate Unix file permission modes (chmod) with a visual checkbox builder",
+            "output": [
+                "Octal",
+                "Symbolic",
+                "chmod Command"
+            ]
+        }
+    ],
+    "Formats": [
+        {
+            "id": "json-formatter",
+            "name": "JSON Formatter",
+            "icon": "Braces",
+            "description": "Format, validate, and minify JSON with syntax highlighting",
+            "options": {
+                "mode": [
+                    "Pretty",
+                    "Minify",
+                    "Compact"
+                ],
+                "indentSpaces": 2,
+                "escapeUnicode": false,
+                "sortKeysAlphabetically": false,
+                "stripComments": true
+            },
+            "actions": [
+                "Format",
+                "Clear"
+            ]
+        },
+        {
+            "id": "json-path-query",
+            "name": "JSON Path Query",
+            "icon": "Filter",
+            "description": "Query JSON data using JSONPath expressions with live results"
+        },
+        {
+            "id": "json-yaml",
+            "name": "JSON ↔ YAML",
+            "icon": "ArrowLeftRight",
+            "description": "Convert between JSON and YAML formats",
+            "actions": [
+                "To YAML",
+                "To JSON",
+                "Swap",
+                "Clear"
+            ]
+        },
+        {
+            "id": "yaml-formatter",
+            "name": "YAML Formatter",
+            "icon": "AlignLeft",
+            "description": "Format and validate YAML",
+            "actions": [
+                "Format",
+                "Clear"
+            ]
+        },
+        {
+            "id": "xml-formatter",
+            "name": "XML Formatter",
+            "icon": "FileCode",
+            "description": "Format and validate XML",
+            "actions": [
+                "Format",
+                "Clear"
+            ]
+        },
+        {
+            "id": "xml-json",
+            "name": "XML ↔ JSON",
+            "icon": "ArrowLeftRight",
+            "description": "Convert between XML and JSON formats",
+            "options": {
+                "indentSpaces": 2,
+                "attributePrefix": "@",
+                "textContentKey": "#text"
+            },
+            "actions": [
+                "To JSON",
+                "To XML",
+                "Swap",
+                "Clear"
+            ]
+        },
+        {
+            "id": "csv-json",
+            "name": "CSV → JSON",
+            "icon": "Table",
+            "description": "Convert CSV data to JSON arrays",
+            "options": {
+                "hasHeader": true,
+                "delimiter": ","
+            },
+            "actions": [
+                "Convert",
+                "Clear"
+            ]
+        },
+        {
+            "id": "json-csv",
+            "name": "JSON → CSV",
+            "icon": "Table",
+            "description": "Convert JSON arrays to CSV",
+            "actions": [
+                "Convert",
+                "Clear"
+            ]
+        },
+        {
+            "id": "sql-formatter",
+            "name": "SQL Formatter",
+            "icon": "Database",
+            "description": "Format and beautify SQL queries",
+            "options": {
+                "dialect": [
+                    "sql",
+                    "mysql",
+                    "postgresql",
+                    "sqlite"
+                ],
+                "indentSize": 2,
+                "uppercase": true
+            },
+            "actions": [
+                "Format",
+                "Clear"
+            ]
+        },
+        {
+            "id": "graphql-formatter",
+            "name": "GraphQL Formatter",
+            "icon": "GitBranch",
+            "description": "Format and validate GraphQL queries and schemas",
+            "actions": [
+                "Format",
+                "Clear"
+            ]
+        },
+        {
+            "id": "toml-parser",
+            "name": "TOML Parser",
+            "icon": "FileText",
+            "description": "Parse and validate TOML configuration files",
+            "actions": [
+                "Parse",
+                "Clear"
+            ]
+        },
+        {
+            "id": "json-typescript",
+            "name": "JSON → TypeScript",
+            "icon": "FileType",
+            "description": "Generate TypeScript interfaces or type aliases from a JSON object",
+            "options": {
+                "output": [
+                    "interface",
+                    "type"
+                ],
+                "rootName": "Root"
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "markdown-html",
+            "name": "Markdown → HTML",
+            "icon": "FileCode2",
+            "description": "Convert Markdown text to raw HTML output",
+            "actions": [
+                "Convert",
+                "Clear"
+            ]
+        },
+        {
+            "id": "text-diff",
+            "name": "Text Diff",
+            "icon": "GitCompare",
+            "description": "Compare two blocks of text and highlight differences line by line",
+            "options": {
+                "mode": [
+                    "Side by Side",
+                    "Inline"
+                ],
+                "ignoreWhitespace": false,
+                "ignoreCase": false
+            },
+            "actions": [
+                "Compare",
+                "Clear"
+            ]
+        },
+        {
+            "id": "regex-tester",
+            "name": "Regex Tester",
+            "icon": "Regex",
+            "description": "Test and debug regular expressions with live match highlighting",
+            "options": {
+                "flags": {
+                    "global": true,
+                    "caseInsensitive": false,
+                    "multiline": false
+                }
+            },
+            "actions": [
+                "Test",
+                "Clear"
+            ]
+        },
+        {
+            "id": "string-inspector",
+            "name": "String Inspector",
+            "icon": "ScanText",
+            "description": "Analyze a string: character count, word count, bytes, lines, and unique chars",
+            "output": [
+                "Characters",
+                "Words",
+                "Lines",
+                "Bytes (UTF-8)",
+                "Unique Characters",
+                "Reading Time"
+            ]
+        },
+        {
+            "id": "cron-parser",
+            "name": "Cron Expression Parser",
+            "icon": "CalendarClock",
+            "description": "Parse and describe cron expressions; preview the next 5 scheduled run times",
+            "output": [
+                "Human Description",
+                "Next 5 Runs"
+            ]
+        },
+        {
+            "id": "regex-library",
+            "name": "Regex Library",
+            "icon": "BookOpen",
+            "description": "Browse a curated library of common regex patterns — grouped by category, with one-click copy and live test input"
+        }
+    ],
+    "Web Dev": [
+        {
+            "id": "color-converter",
+            "name": "Color Converter",
+            "icon": "Palette",
+            "description": "Convert between HEX, RGB, HSL, HSV, and CMYK color formats"
+        },
+        {
+            "id": "css-minifier",
+            "name": "CSS Minifier",
+            "icon": "Minimize2",
+            "description": "Minify and compress CSS stylesheets",
+            "actions": [
+                "Minify",
+                "Clear"
+            ]
+        },
+        {
+            "id": "js-minifier",
+            "name": "JS Minifier",
+            "icon": "Code",
+            "description": "Minify and compress JavaScript code",
+            "actions": [
+                "Minify",
+                "Clear"
+            ]
+        },
+        {
+            "id": "html-minifier",
+            "name": "HTML Minifier",
+            "icon": "Code2",
+            "description": "Minify HTML markup",
+            "actions": [
+                "Minify",
+                "Clear"
+            ]
+        },
+        {
+            "id": "markdown-preview",
+            "name": "Markdown Preview",
+            "icon": "Eye",
+            "description": "Live preview Markdown with syntax highlighting"
+        },
+        {
+            "id": "lorem-ipsum",
+            "name": "Lorem Ipsum",
+            "icon": "AlignLeft",
+            "description": "Generate Lorem Ipsum placeholder text",
+            "options": {
+                "type": [
+                    "Paragraphs",
+                    "Sentences",
+                    "Words"
+                ],
+                "count": 3
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "data-uri",
+            "name": "Data URI",
+            "icon": "Link2",
+            "description": "Encode images or files into Data URI / Base64 strings",
+            "actions": [
+                "Encode",
+                "Clear"
+            ]
+        },
+        {
+            "id": "svg-path-analyzer",
+            "name": "SVG Path Analyzer",
+            "icon": "PenTool",
+            "description": "Analyze, visualize, and optimize SVG path data"
+        },
+        {
+            "id": "color-picker",
+            "name": "Color Picker",
+            "icon": "Pipette",
+            "description": "Pick a color visually and instantly get HEX, RGB, HSL values"
+        },
+        {
+            "id": "qr-code-generator",
+            "name": "QR Code Generator",
+            "icon": "QrCode",
+            "description": "Generate QR codes from URLs or any text",
+            "options": {
+                "size": 256,
+                "errorCorrection": [
+                    "L",
+                    "M",
+                    "Q",
+                    "H"
+                ],
+                "format": [
+                    "PNG",
+                    "SVG"
+                ]
+            },
+            "actions": [
+                "Generate",
+                "Download",
+                "Clear"
+            ]
+        },
+        {
+            "id": "curl-to-code",
+            "name": "cURL to Code",
+            "icon": "Terminal",
+            "description": "Convert a cURL command into fetch, axios, Python requests, Go, and more",
+            "options": {
+                "language": [
+                    "fetch (JS)",
+                    "axios",
+                    "Python requests",
+                    "Go http",
+                    "PHP cURL"
+                ]
+            },
+            "actions": [
+                "Convert",
+                "Clear"
+            ]
+        },
+        {
+            "id": "url-parser",
+            "name": "URL Parser",
+            "icon": "Unlink",
+            "description": "Break down a URL into protocol, host, port, path, query params, and hash",
+            "actions": [
+                "Parse",
+                "Clear"
+            ],
+            "output": [
+                "Protocol",
+                "Host",
+                "Port",
+                "Path",
+                "Query Params",
+                "Hash",
+                "Origin"
+            ]
+        },
+        {
+            "id": "query-string-builder",
+            "name": "Query String Builder",
+            "icon": "Link",
+            "description": "Build and decode URL query strings from key-value pairs",
+            "actions": [
+                "Build",
+                "Decode",
+                "Clear"
+            ]
+        },
+        {
+            "id": "http-status-codes",
+            "name": "HTTP Status Codes",
+            "icon": "Activity",
+            "description": "Browse and search all HTTP status codes with descriptions",
+            "options": {
+                "filter": [
+                    "All",
+                    "1xx Info",
+                    "2xx Success",
+                    "3xx Redirect",
+                    "4xx Client",
+                    "5xx Server"
+                ]
+            }
+        },
+        {
+            "id": "mime-types",
+            "name": "MIME Types Lookup",
+            "icon": "FileSearch",
+            "description": "Look up MIME types by file extension or content type string"
+        },
+        {
+            "id": "gitignore-generator",
+            "name": ".gitignore Generator",
+            "icon": "GitCommitHorizontal",
+            "description": "Generate .gitignore files by selecting your stack or framework",
+            "options": {
+                "templates": [
+                    "Node",
+                    "Python",
+                    "Java",
+                    "Rust",
+                    "Go",
+                    "React",
+                    "Next.js",
+                    "Android",
+                    "iOS",
+                    "Unity"
+                ]
+            },
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "timestamp-converter",
+            "name": "Timestamp Converter",
+            "icon": "Clock",
+            "description": "Convert Unix timestamps to human-readable dates and vice versa",
+            "options": {
+                "timezone": "Local",
+                "format": [
+                    "ISO 8601",
+                    "RFC 2822",
+                    "Custom"
+                ]
+            },
+            "actions": [
+                "Convert",
+                "Now",
+                "Clear"
+            ]
+        },
+        {
+            "id": "ip-cidr-calculator",
+            "name": "IP / CIDR Calculator",
+            "icon": "Network",
+            "description": "Calculate subnet range, broadcast, mask and host count from CIDR notation",
+            "actions": [
+                "Calculate",
+                "Clear"
+            ],
+            "output": [
+                "Network Address",
+                "Broadcast",
+                "Subnet Mask",
+                "Host Range",
+                "Total Hosts"
+            ]
+        }
+    ]
+}
