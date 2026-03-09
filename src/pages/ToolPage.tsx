@@ -11,7 +11,7 @@ const CATEGORY_FOLDER: Record<string, string> = {
 }
 
 // Cache of lazy-loaded components so we don't re-import on every render
-const componentCache: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {}
+const componentCache: Record<string, React.ComponentType<any>> = {}
 
 function getToolComponent(toolId: string, category: string) {
     if (!componentCache[toolId]) {
