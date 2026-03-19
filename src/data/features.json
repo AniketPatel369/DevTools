@@ -1010,7 +1010,13 @@
             "icon": "Box",
             "description": "Convert JSON objects into typed models for Java, Go, Rust, Python, and C#",
             "options": {
-                "language": ["Java", "Go", "Rust", "Python", "C#"],
+                "language": [
+                    "Java",
+                    "Go",
+                    "Rust",
+                    "Python",
+                    "C#"
+                ],
                 "rootName": "Root",
                 "useLombok": true
             },
@@ -1025,7 +1031,10 @@
             "icon": "CalendarClock",
             "description": "Visually build cron expressions for standard crontab and Spring @Scheduled syntax",
             "options": {
-                "type": ["Standard Crontab", "Spring @Scheduled"],
+                "type": [
+                    "Standard Crontab",
+                    "Spring @Scheduled"
+                ],
                 "includeDescription": true
             },
             "actions": [
@@ -1039,7 +1048,13 @@
             "icon": "Package",
             "description": "Generate optimized Dockerfiles and docker-compose.yml for common application stacks",
             "options": {
-                "stack": ["Node.js", "Python", "Java/Maven", "Go", "Nginx"],
+                "stack": [
+                    "Node.js",
+                    "Python",
+                    "Java/Maven",
+                    "Go",
+                    "Nginx"
+                ],
                 "compose": true
             },
             "actions": [
