@@ -2,7 +2,7 @@
 
 # 🛠️ DevTools
 
-**A fast, offline-first developer toolkit — 64 tools, one app.**
+**A fast, offline-first developer toolkit — 69 tools, one app.**
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
@@ -59,20 +59,23 @@
 | JWT Debugger | Build, sign, and verify JWTs |
 | Unix Permissions | chmod calculator & permission visualiser |
 
-### 📄 Formats (18 tools)
+### 📄 Formats (21 tools)
 | Tool | Description |
 |------|-------------|
 | JSON Formatter | Prettify and minify JSON |
+| JSON Diff | Structural JSON comparison with key sorting |
 | JSON ↔ YAML | Convert between JSON and YAML |
 | JSON ↔ CSV | Convert tabular data formats |
 | JSON → TypeScript | Generate TypeScript interfaces from JSON |
 | JSON Path Query | Query JSON with JSONPath expressions |
 | YAML Formatter | Format and validate YAML |
 | XML Formatter | Prettify and validate XML |
+| XML Diff | XML document comparison with auto-format |
 | XML ↔ JSON | Convert between XML and JSON |
 | TOML Parser | Parse TOML config files |
 | GraphQL Formatter | Format GraphQL queries and schemas |
 | SQL Formatter | Beautify SQL queries |
+| SQL Diff | SQL script comparison with normalization |
 | Markdown → HTML | Preview and convert Markdown |
 | Regex Tester | Live regex testing with match highlighting |
 | Regex Library | Searchable library of common patterns |
@@ -112,6 +115,12 @@
 | Smooth Shadows | Create organic, layered box-shadows with depth |
 | CSS Filter Lab | Apply photographic filters to images visually |
 | 3D Transform Visualizer | Interactive 3D cube for visualizing transforms |
+
+### 🛠️ Development (2 tools)
+| Tool | Description |
+|------|-------------|
+| Spring Boot Entity Maker | Generate JPA entities with Lombok & validation |
+| Spring Boot Project Maker | Scaffold a Spring Boot project structure & pom.xml |
 
 ---
 
@@ -175,8 +184,9 @@ src/
 ├── styles/           # tokens.css, layout.css, components.css…
 ├── tools/
 │   ├── css/          # 6 premium CSS visualization tools
+│   ├── development/  # 2 backend generator tools
 │   ├── encoding/     # 13 encoding tools
-│   ├── formats/      # 18 format tools
+│   ├── formats/      # 21 format tools
 │   ├── hashing/      # 9 hashing/crypto tools
 │   └── webdev/       # 18 web dev tools
 └── utils/            # crypto, text, format helpers

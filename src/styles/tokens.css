@@ -52,6 +52,10 @@
   --color-css-bg:         #1e1b4b;
   --color-css-border:     #312e81;
 
+  --color-dev:            #10b981;
+  --color-dev-bg:         #064e3b;
+  --color-dev-border:     #065f46;
+
   /* ---------- Semantic ---------- */
   --color-success:        #4ade80;
   --color-danger:         #f87171;

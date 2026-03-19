@@ -30,4 +30,5 @@ export const CATEGORY_NAMES: CategoryName[] = [
     'Formats',
     'Web Dev',
     'CSS',
+    'Development',
 ]

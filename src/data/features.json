@@ -586,6 +586,47 @@
             "name": "Regex Library",
             "icon": "BookOpen",
             "description": "Browse a curated library of common regex patterns — grouped by category, with one-click copy and live test input"
+        },
+        {
+            "id": "json-diff",
+            "name": "JSON Diff",
+            "icon": "FileJson",
+            "description": "Compare two JSON objects with structural normalization and highlighting",
+            "options": {
+                "formatFirst": true,
+                "sortKeys": true
+            },
+            "actions": [
+                "Compare",
+                "Clear"
+            ]
+        },
+        {
+            "id": "xml-diff",
+            "name": "XML Diff",
+            "icon": "FileCode",
+            "description": "Compare two XML documents with automatic prettification",
+            "options": {
+                "formatFirst": true
+            },
+            "actions": [
+                "Compare",
+                "Clear"
+            ]
+        },
+        {
+            "id": "sql-diff",
+            "name": "SQL Diff",
+            "icon": "Database",
+            "description": "Compare two SQL scripts with keyword normalization and formatting",
+            "options": {
+                "formatFirst": true,
+                "dialect": "sql"
+            },
+            "actions": [
+                "Compare",
+                "Clear"
+            ]
         }
     ],
     "Web Dev": [
@@ -949,6 +990,28 @@
             "actions": [
                 "Copy CSS",
                 "Clear"
+            ]
+        }
+    ],
+    "Development": [
+        {
+            "id": "spring-entity-maker",
+            "name": "Spring Boot Entity Maker",
+            "icon": "Cpu",
+            "description": "Generate Java JPA entities with Lombok annotations and validation constraints",
+            "actions": [
+                "Generate",
+                "Clear"
+            ]
+        },
+        {
+            "id": "spring-project-maker",
+            "name": "Spring Boot Project Maker",
+            "icon": "Package",
+            "description": "Scaffold a Spring Boot project structure with core dependencies and configuration",
+            "actions": [
+                "Generate",
+                "Download ZIP"
             ]
         }
     ]

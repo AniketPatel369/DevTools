@@ -35,4 +35,10 @@ export const CATEGORY_META: Record<CategoryName, CategoryMeta> = {
         borderColor: 'var(--color-css-border)',
         order: 4,
     },
+    'Development': {
+        color: 'var(--color-dev)',
+        bgColor: 'var(--color-dev-bg)',
+        borderColor: 'var(--color-dev-border)',
+        order: 5,
+    },
 }
