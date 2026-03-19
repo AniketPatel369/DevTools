@@ -2,6 +2,16 @@ import { Link } from 'react-router-dom'
 import { useRecentStore } from '@/store/recent'
 import { useFavouritesStore } from '@/store/favourites'
 import { findTool, ALL_TOOLS } from '@/data/registry'
+import { CATEGORY_META } from '@/data/categoryMeta'
+import * as LucideIcons from 'lucide-react'
+import type { CategoryName } from '@/data/types'
+
+type LucideIconName = keyof typeof LucideIcons
+
+function ToolIcon({ name, size = 20, color }: { name: string; size?: number; color?: string }) {
+    const Icon = (LucideIcons[name as LucideIconName] ?? LucideIcons.Wrench) as React.FC<{ size?: number; color?: string; strokeWidth?: number }>
+    return <Icon size={size} color={color} strokeWidth={1.5} />
+}
 
 export function HomePage() {
     const { ids: recentIds } = useRecentStore()
@@ -9,7 +19,8 @@ export function HomePage() {
 
     const recentTools = recentIds.map(id => findTool(id)).filter(Boolean)
     const favTools = favIds.map(id => findTool(id)).filter(Boolean)
-    const suggestedTools = ALL_TOOLS.slice(0, 8)
+    // Show a mix of tools, prioritizing CSS for now since they are new
+    const suggestedTools = ALL_TOOLS.filter(t => t.category === 'CSS').concat(ALL_TOOLS.filter(t => t.category !== 'CSS').slice(0, 4))
 
     return (
         <div className="home-page">
@@ -19,13 +30,18 @@ export function HomePage() {
             </div>
 
             {favTools.length > 0 && (
-                <div>
+                <div style={{ marginBottom: 'var(--space-8)' }}>
                     <div className="home-section-title">⭐ Favourites</div>
                     <div className="home-tools-grid">
                         {favTools.map(t => t && (
                             <Link key={t.id} to={`/tool/${t.id}`} className="home-tool-card">
-                                <div className="home-tool-card-name">{t.name}</div>
-                                <div className="home-tool-card-desc">{t.description}</div>
+                                <div className="home-tool-card-icon" style={{ background: CATEGORY_META[t.category as CategoryName]?.bgColor }}>
+                                    <ToolIcon name={t.icon} color={CATEGORY_META[t.category as CategoryName]?.color} />
+                                </div>
+                                <div className="home-tool-card-content">
+                                    <div className="home-tool-card-name">{t.name}</div>
+                                    <div className="home-tool-card-desc">{t.description}</div>
+                                </div>
                             </Link>
                         ))}
                     </div>
@@ -33,13 +49,18 @@ export function HomePage() {
             )}
 
             {recentTools.length > 0 && (
-                <div>
+                <div style={{ marginBottom: 'var(--space-8)' }}>
                     <div className="home-section-title">🕐 Recently Used</div>
                     <div className="home-tools-grid">
                         {recentTools.map(t => t && (
                             <Link key={t.id} to={`/tool/${t.id}`} className="home-tool-card">
-                                <div className="home-tool-card-name">{t.name}</div>
-                                <div className="home-tool-card-desc">{t.description}</div>
+                                <div className="home-tool-card-icon" style={{ background: CATEGORY_META[t.category as CategoryName]?.bgColor }}>
+                                    <ToolIcon name={t.icon} color={CATEGORY_META[t.category as CategoryName]?.color} />
+                                </div>
+                                <div className="home-tool-card-content">
+                                    <div className="home-tool-card-name">{t.name}</div>
+                                    <div className="home-tool-card-desc">{t.description}</div>
+                                </div>
                             </Link>
                         ))}
                     </div>
@@ -47,12 +68,17 @@ export function HomePage() {
             )}
 
             <div>
-                <div className="home-section-title">🚀 Popular Tools</div>
+                <div className="home-section-title">🚀 Featured Tools</div>
                 <div className="home-tools-grid">
                     {suggestedTools.map(t => (
                         <Link key={t.id} to={`/tool/${t.id}`} className="home-tool-card">
-                            <div className="home-tool-card-name">{t.name}</div>
-                            <div className="home-tool-card-desc">{t.description}</div>
+                            <div className="home-tool-card-icon" style={{ background: CATEGORY_META[t.category as CategoryName]?.bgColor }}>
+                                <ToolIcon name={t.icon} color={CATEGORY_META[t.category as CategoryName]?.color} />
+                            </div>
+                            <div className="home-tool-card-content">
+                                <div className="home-tool-card-name">{t.name}</div>
+                                <div className="home-tool-card-desc">{t.description}</div>
+                            </div>
                         </Link>
                     ))}
                 </div>

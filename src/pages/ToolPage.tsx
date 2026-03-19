@@ -8,6 +8,7 @@ const CATEGORY_FOLDER: Record<string, string> = {
     Hashing: 'hashing',
     Formats: 'formats',
     'Web Dev': 'webdev',
+    CSS: 'css',
 }
 
 // Cache of lazy-loaded components so we don't re-import on every render

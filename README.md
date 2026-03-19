@@ -2,7 +2,7 @@
 
 # 🛠️ DevTools
 
-**A fast, offline-first developer toolkit — 58 tools, one app.**
+**A fast, offline-first developer toolkit — 64 tools, one app.**
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
@@ -103,6 +103,16 @@
 | Markdown Preview | Live Markdown preview |
 | Gitignore Generator | Generate `.gitignore` files by project type |
 
+### 🎨 CSS (6 tools)
+| Tool | Description |
+|------|-------------|
+| CSS Pattern Generator | Generate pure-CSS geometric background patterns |
+| Animation Playground | Preview and generate premium CSS keyframe animations |
+| Glassmorphism | Generate frosted glass effects with backdrop filters |
+| Smooth Shadows | Create organic, layered box-shadows with depth |
+| CSS Filter Lab | Apply photographic filters to images visually |
+| 3D Transform Visualizer | Interactive 3D cube for visualizing transforms |
+
 ---
 
 ## 🚀 Getting Started
@@ -164,6 +174,7 @@ src/
 ├── store/            # Zustand stores (favourites, history)
 ├── styles/           # tokens.css, layout.css, components.css…
 ├── tools/
+│   ├── css/          # 6 premium CSS visualization tools
 │   ├── encoding/     # 13 encoding tools
 │   ├── formats/      # 18 format tools
 │   ├── hashing/      # 9 hashing/crypto tools

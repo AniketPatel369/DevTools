@@ -18,7 +18,7 @@ export interface ToolOutput {
     timestamp: number
 }
 
-export type CategoryName = 'Encoding' | 'Hashing' | 'Formats' | 'Web Dev'
+export type CategoryName = 'Encoding' | 'Hashing' | 'Formats' | 'Web Dev' | 'CSS'
 
 export interface Tool {
     id: string

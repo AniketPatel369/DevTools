@@ -24,10 +24,10 @@ export const ALL_TOOLS: Tool[] = Object.values(TOOLS_MAP).flat()
 export const findTool = (id: string): Tool | undefined =>
     ALL_TOOLS.find(t => t.id === id)
 
-// Category names in display order
 export const CATEGORY_NAMES: CategoryName[] = [
     'Encoding',
     'Hashing',
     'Formats',
     'Web Dev',
+    'CSS',
 ]

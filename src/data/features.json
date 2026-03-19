@@ -826,5 +826,130 @@
                 "Total Hosts"
             ]
         }
+    ],
+    "CSS": [
+        {
+            "id": "css-pattern-generator",
+            "name": "CSS Pattern Generator",
+            "icon": "Grid3X3",
+            "description": "Generate pure-CSS geometric background patterns like grids, waves, and dots",
+            "options": {
+                "pattern": [
+                    "Neon Grid",
+                    "Hacker Matrix",
+                    "Polka Dots",
+                    "Chevron",
+                    "Diagonal Stripes",
+                    "Checkered"
+                ],
+                "scale": 100,
+                "color1": "#000000",
+                "color2": "#ffffff"
+            },
+            "actions": [
+                "Copy CSS",
+                "Clear"
+            ]
+        },
+        {
+            "id": "animation-playground",
+            "name": "Animation Playground",
+            "icon": "Sparkles",
+            "description": "Preview and generate CSS keyframe animations with premium effects",
+            "options": {
+                "animation": [
+                    "Pulse (Standard)",
+                    "Bounce (Standard)",
+                    "Fade In Up",
+                    "Cyber Glitch (Premium)",
+                    "Neon Flicker (Premium)",
+                    "Magnetic Float (Premium)",
+                    "Cinematic Reveal (Premium)"
+                ],
+                "duration": 1.5,
+                "delay": 0,
+                "iterationCount": [
+                    "infinite",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            "actions": [
+                "Copy CSS",
+                "Replay"
+            ]
+        },
+        {
+            "id": "glassmorphism",
+            "name": "Glassmorphism",
+            "icon": "CloudFog",
+            "description": "Generate frosted glass effects using backdrop-filter and transparency",
+            "options": {
+                "blur": 10,
+                "transparency": 0.5,
+                "color": "#ffffff"
+            },
+            "actions": [
+                "Copy CSS",
+                "Clear"
+            ]
+        },
+        {
+            "id": "smooth-shadows",
+            "name": "Smooth Shadows",
+            "icon": "Layers",
+            "description": "Create premium, layered CSS box-shadows for a smooth, realistic depth effect",
+            "options": {
+                "layers": 6,
+                "alpha": 0.07,
+                "distance": 100,
+                "blur": 80
+            },
+            "actions": [
+                "Copy CSS",
+                "Clear"
+            ]
+        },
+        {
+            "id": "css-filter-lab",
+            "name": "CSS Filter Lab",
+            "icon": "SlidersHorizontal",
+            "description": "Apply CSS photographic filters like grayscale, sepia, blur, and hue-rotate visually",
+            "options": {
+                "blur": 0,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "hueRotate": 0,
+                "invert": 0,
+                "sepia": 0,
+                "saturate": 100
+            },
+            "actions": [
+                "Copy CSS",
+                "Clear"
+            ]
+        },
+        {
+            "id": "transform-visualizer",
+            "name": "3D Transform Visualizer",
+            "icon": "Box",
+            "description": "Visualize and generate complex 2D and 3D CSS transforms with an interactive cube",
+            "options": {
+                "perspective": 1000,
+                "rotateX": 0,
+                "rotateY": 0,
+                "rotateZ": 0,
+                "translateX": 0,
+                "translateY": 0,
+                "translateZ": 0,
+                "scale": 1
+            },
+            "actions": [
+                "Copy CSS",
+                "Clear"
+            ]
+        }
     ]
 }

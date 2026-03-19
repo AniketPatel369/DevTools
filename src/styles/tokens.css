@@ -48,6 +48,10 @@
   --color-webdev-bg:      #3a2a1a;
   --color-webdev-border:  #7a4f2d;
 
+  --color-css:            #818cf8;
+  --color-css-bg:         #1e1b4b;
+  --color-css-border:     #312e81;
+
   /* ---------- Semantic ---------- */
   --color-success:        #4ade80;
   --color-danger:         #f87171;
