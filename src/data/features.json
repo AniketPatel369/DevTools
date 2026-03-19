@@ -1005,13 +1005,46 @@
             ]
         },
         {
-            "id": "spring-project-maker",
-            "name": "Spring Boot Project Maker",
-            "icon": "Package",
-            "description": "Scaffold a Spring Boot project structure with core dependencies and configuration",
+            "id": "json-to-struct",
+            "name": "JSON → Struct / POJO",
+            "icon": "Box",
+            "description": "Convert JSON objects into typed models for Java, Go, Rust, Python, and C#",
+            "options": {
+                "language": ["Java", "Go", "Rust", "Python", "C#"],
+                "rootName": "Root",
+                "useLombok": true
+            },
             "actions": [
                 "Generate",
-                "Download ZIP"
+                "Clear"
+            ]
+        },
+        {
+            "id": "cron-builder",
+            "name": "Universal Cron Builder",
+            "icon": "CalendarClock",
+            "description": "Visually build cron expressions for standard crontab and Spring @Scheduled syntax",
+            "options": {
+                "type": ["Standard Crontab", "Spring @Scheduled"],
+                "includeDescription": true
+            },
+            "actions": [
+                "Copy Expression",
+                "Clear"
+            ]
+        },
+        {
+            "id": "docker-scaffold",
+            "name": "Docker Scaffold",
+            "icon": "Package",
+            "description": "Generate optimized Dockerfiles and docker-compose.yml for common application stacks",
+            "options": {
+                "stack": ["Node.js", "Python", "Java/Maven", "Go", "Nginx"],
+                "compose": true
+            },
+            "actions": [
+                "Generate",
+                "Clear"
             ]
         }
     ]

@@ -2,7 +2,7 @@
 
 # 🛠️ DevTools
 
-**A fast, offline-first developer toolkit — 69 tools, one app.**
+**A fast, offline-first developer toolkit — 71 tools, one app.**
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
@@ -116,11 +116,13 @@
 | CSS Filter Lab | Apply photographic filters to images visually |
 | 3D Transform Visualizer | Interactive 3D cube for visualizing transforms |
 
-### 🛠️ Development (2 tools)
+### 🛠️ Development (4 tools)
 | Tool | Description |
 |------|-------------|
 | Spring Boot Entity Maker | Generate JPA entities with Lombok & validation |
-| Spring Boot Project Maker | Scaffold a Spring Boot project structure & pom.xml |
+| JSON → Struct / POJO | Convert JSON into typed models (Java, Go, Rust, Python, C#) |
+| Universal Cron Builder | Build cron expressions for crontab & Spring |
+| Docker Scaffold | Generate optimized Dockerfiles & docker-compose.yml |
 
 ---
 
@@ -184,7 +186,7 @@ src/
 ├── styles/           # tokens.css, layout.css, components.css…
 ├── tools/
 │   ├── css/          # 6 premium CSS visualization tools
-│   ├── development/  # 2 backend generator tools
+│   ├── development/  # 4 backend generator tools
 │   ├── encoding/     # 13 encoding tools
 │   ├── formats/      # 21 format tools
 │   ├── hashing/      # 9 hashing/crypto tools
