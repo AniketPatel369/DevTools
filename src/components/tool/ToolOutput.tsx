@@ -11,6 +11,7 @@ export interface OutputField {
 interface ToolOutputProps {
     fields: OutputField[]
     loading?: boolean
+    children?: React.ReactNode
 }
 
 function OutputFields({ fields, accented }: { fields: OutputField[], accented: boolean }) {
@@ -39,9 +40,12 @@ function OutputFields({ fields, accented }: { fields: OutputField[], accented: b
     )
 }
 
-export function ToolOutput({ fields, loading }: ToolOutputProps) {
-    const fullText = fields.map(f => `${f.label}:\n${f.value}`).join('\n\n')
-    const { chars } = useCharCount(fullText)
+export function ToolOutput({ fields, loading, children }: ToolOutputProps) {
+    const fullText = fields.map(f => f.value).join('\n\n') // Note: changed from f.label:\n${f.value} to just f.value so copying output is cleaner and doesn't prepend headers, or we can keep it as is if they want headers. Let's keep it clean or keep original fullText behavior. Let's keep original format logic.
+    // Wait, original: fields.map(f => `${f.label}:\n${f.value}`).join('\n\n')
+    // Actually, let's keep the original exact code so we don't break existing copying behavior.
+    const originalFullText = fields.map(f => `${f.label}:\n${f.value}`).join('\n\n')
+    const { chars } = useCharCount(originalFullText)
     const [isFullscreen, setIsFullscreen] = useState(false)
     const overlayRef = useRef<HTMLDivElement>(null)
 
@@ -76,7 +80,7 @@ export function ToolOutput({ fields, loading }: ToolOutputProps) {
     const headerRight = (
         <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
             {chars > 0 && <span className="dt-char-count">{chars.toLocaleString()} chars</span>}
-            <CopyButton text={fullText} label="Copy" />
+            <CopyButton text={originalFullText} label="Copy" />
             <button
                 className="tool-output-expand-btn"
                 onClick={() => setIsFullscreen(v => !v)}
@@ -98,7 +102,7 @@ export function ToolOutput({ fields, loading }: ToolOutputProps) {
                     {headerRight}
                 </div>
                 <div className="tool-output-body">
-                    <OutputFields fields={fields} accented={accented} />
+                    {children ? children : <OutputFields fields={fields} accented={accented} />}
                 </div>
             </div>
 
@@ -117,7 +121,7 @@ export function ToolOutput({ fields, loading }: ToolOutputProps) {
                             </span>
                             <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                                 {chars > 0 && <span className="dt-char-count">{chars.toLocaleString()} chars</span>}
-                                <CopyButton text={fullText} label="Copy" />
+                                <CopyButton text={originalFullText} label="Copy" />
                                 <div className="tool-output-fullscreen-divider" />
                                 <button
                                     className="tool-output-expand-btn"
@@ -131,7 +135,7 @@ export function ToolOutput({ fields, loading }: ToolOutputProps) {
                             </div>
                         </div>
                         <div className="tool-output-fullscreen-body">
-                            <OutputFields fields={fields} accented={accented} />
+                            {children ? children : <OutputFields fields={fields} accented={accented} />}
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ import { Spinner } from '@/components/ui/Spinner'
 import { Button } from '@/components/ui/Button'
 import { useTool } from '@/hooks/useTool'
 import { Play, Trash2 } from 'lucide-react'
+import { JsonTreeView } from '@/components/tool/JsonTreeView'
 
 type Mode = 'Pretty' | 'Minify' | 'Compact'
 
@@ -23,7 +24,11 @@ function formatJson(text: string, mode: Mode, indent: number, sort: boolean): st
 function sortKeys(obj: unknown): unknown {
     if (Array.isArray(obj)) return obj.map(sortKeys)
     if (obj && typeof obj === 'object') {
-        return Object.fromEntries(Object.entries(obj as Record<string, unknown>).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => [k, sortKeys(v)]))
+        return Object.fromEntries(
+            Object.entries(obj as Record<string, unknown>)
+                .sort(([a], [b]) => a.localeCompare(b))
+                .map(([k, v]) => [k, sortKeys(v)])
+        )
     }
     return obj
 }
@@ -34,6 +39,7 @@ export default function JsonFormatter() {
     const [mode, setMode] = useState<Mode>('Pretty')
     const [indent, setIndent] = useState(2)
     const [sort, setSort] = useState(false)
+    const [viewAs, setViewAs] = useState<'Text' | 'Tree'>('Text')
     const [error, setError] = useState('')
 
     const run = () => {
@@ -41,10 +47,16 @@ export default function JsonFormatter() {
         try {
             const result = formatJson(input.trim(), mode, indent, sort)
             setOutput({ input, output: result })
-        } catch (e) { setError((e as Error).message) }
+        } catch (e) {
+            setError((e as Error).message)
+        }
     }
 
-    const clear = () => { setInput(''); clearOutput(); setError('') }
+    const clear = () => {
+        setInput('')
+        clearOutput()
+        setError('')
+    }
 
     return (
         <ToolLayout toolId="json-formatter">
@@ -53,6 +65,10 @@ export default function JsonFormatter() {
                 <div className="tool-option-group">
                     <label>Mode</label>
                     <Toggle options={['Pretty', 'Minify', 'Compact']} value={mode} onChange={v => setMode(v as Mode)} />
+                </div>
+                <div className="tool-option-group">
+                    <label>View As</label>
+                    <Toggle options={['Text', 'Tree']} value={viewAs} onChange={v => setViewAs(v as 'Text' | 'Tree')} />
                 </div>
                 <Spinner label="Indent Spaces" value={indent} onChange={setIndent} min={1} max={8} />
                 <label className="dt-checkbox">
@@ -65,7 +81,11 @@ export default function JsonFormatter() {
                 <Button variant="danger" onClick={clear} icon={<Trash2 size={13} />}>Clear</Button>
             </div>
             {error && <div style={{ color: 'var(--color-danger)', fontSize: 'var(--text-sm)', fontFamily: 'var(--font-mono)' }}>{error}</div>}
-            <ToolOutput fields={[{ label: 'Output', value: typeof output?.output === 'string' ? output.output : '' }]} />
+            <ToolOutput fields={[{ label: 'Output', value: typeof output?.output === 'string' ? output.output : '' }]}>
+                {viewAs === 'Tree' && output?.output && (
+                    <JsonTreeView data={output.output} />
+                )}
+            </ToolOutput>
         </ToolLayout>
     )
 }
